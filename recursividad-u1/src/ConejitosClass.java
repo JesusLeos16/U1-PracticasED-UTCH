@@ -1,18 +1,14 @@
 public class ConejitosClass {
-    public void conejitos(int numero){
-        int orejas = numero*3;
-        if (numero==3){
-            orejas = orejas-3;
-            IO.println("Ya fueron todos los conejitos");
-            IO.println("Orejas de conejos radioactivos (de tres orejas): "+orejas);
-            return;
+    public int orejillas(int conejillos){
+
+        if(conejillos==0){
+            return 0;
         }
+        if(conejillos % 2==0) {
 
-        int resultado;
-        resultado = (2*numero);
-        IO.println("Conejito "+resultado +" suma "+orejas+" orejas a la cuenta");
-        conejitos(numero+1);
-
+            return 3 +orejillas(conejillos-1);
+        }else{
+            return 2 + orejillas(conejillos-1);
+        }
     }
-
 }
