@@ -24,7 +24,16 @@ void main() {
                  palabra = AsteriscosClass.palabra("aaaa");
                 IO.println(palabra);
                 break;
+            case 3:
+
+                break;
             default: IO.println("Valor invalido");
         }
     }
+
+    Binarios bbb = new Binarios();
+    String binarioCien = bbb.numBin(100);
+    String binarioDosMil = bbb.numBin(2000);
+    IO.println(binarioCien);
+    IO.println(binarioDosMil);
 }
