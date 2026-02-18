@@ -1,5 +1,5 @@
 public class Binarios {
-    public  String numBin(int numero){
+    public static String numBin(int numero){
         //El tope
         if(numero==0){
             return "";

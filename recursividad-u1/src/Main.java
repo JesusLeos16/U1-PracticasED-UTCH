@@ -30,10 +30,18 @@ void main() {
             default: IO.println("Valor invalido");
         }
     }
-
+    //Ejercicio de los binarios
     Binarios bbb = new Binarios();
     String binarioCien = bbb.numBin(100);
     String binarioDosMil = bbb.numBin(2000);
     IO.println(binarioCien);
     IO.println(binarioDosMil);
+
+    InversionClass inv = new InversionClass();
+    String palabraInvertida = inv.Invertida("Hola");
+    String pDos = inv.Invertida("Milton");
+    String pTres = inv.Invertida("iguana");
+    IO.println(palabraInvertida);
+    IO.println(pDos);
+    IO.println(pTres);
 }
